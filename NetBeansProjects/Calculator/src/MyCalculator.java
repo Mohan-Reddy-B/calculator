@@ -352,19 +352,24 @@ public class MyCalculator extends javax.swing.JFrame {
 
     private void jbtnequalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnequalActionPerformed
        NumEnter2 = Double.parseDouble(jtxtresult.getText());
-       if(op == "+"){
-           Result = NumEnter1 + NumEnter2;
-           jtxtresult.setText(String.valueOf(Result));
-       }else if(op == "-"){
-           Result = NumEnter1 - NumEnter2;
-           jtxtresult.setText(String.valueOf(Result));
-       }else if(op == "*"){
-           Result = NumEnter1 * NumEnter2;
-           jtxtresult.setText(String.valueOf(Result));
-       }else if(op == "/"){
-           Result = NumEnter1 / NumEnter2;
-           jtxtresult.setText(String.valueOf(Result));
-       }
+       if(null != op)switch (op) {
+            case "+":
+                Result = NumEnter1 + NumEnter2;
+                jtxtresult.setText(String.valueOf(Result));
+                break;
+            case "-":
+                Result = NumEnter1 - NumEnter2;
+                jtxtresult.setText(String.valueOf(Result));
+                break;
+            case "*":
+                Result = NumEnter1 * NumEnter2;
+                jtxtresult.setText(String.valueOf(Result));
+                break;
+            case "/":
+                Result = NumEnter1 / NumEnter2;
+                jtxtresult.setText(String.valueOf(Result));
+                break;
+        }
     }//GEN-LAST:event_jbtnequalActionPerformed
 
     private void jtxtresultActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtxtresultActionPerformed
@@ -413,10 +418,8 @@ public class MyCalculator extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new MyCalculator().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new MyCalculator().setVisible(true);
         });
     }
 
