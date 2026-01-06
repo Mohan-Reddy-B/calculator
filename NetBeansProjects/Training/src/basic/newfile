@@ -1,0 +1,286 @@
+ java
+   object oriented
+   high level programming
+   widley used programming language
+
+Uses:
+   1)destop and Web application
+   2)Enterpress Application(like banking, ERP etc)
+   3)Gaming Robatic
+   4)Mobil application
+
+3 Edetions of java
+   1)JSE(java standard edition)
+       destop application awt and swing
+   2)j2ee(java 2 enterprise edition)
+       webapplication ,enterprise
+       servlets,jsp,beans,rmi
+   3)micro edition
+       mobil application
+       android
+
+Software
+  JDK(java development kit)
+    -JDK consists of(JRE and JVM and complier)
+  JRE(java runtime environment)
+    -it provide some of the libraries
+  JVM(java virtual machine)
+    -load the file
+    -verify the code
+    -execute the code
+
+Features:
+ -simple
+ -secure
+ -high level
+ -object oriented(diseaning an application in the form of class and object)
+ -platform independent(you can write program in any operating system)
+ -portable
+ -dynamic
+ -distributed(It consists of RMI(remot method imocation))
+ -multithreading(exectuing multiple tasks in a single programming)
+ -robust(strong)
+         
+variables:
+         -contains to store a data
+Types of variables:
+         local variable
+          -variables declared inside method
+         instance
+           -variable declared inside class and outside of method
+         static
+          -variable declared inside the class but declared with static variable
+
+data types:
+    CLASSIFICATION OF DATA ITEMS
+     -there 2 types
+        1)primitive data type(store single value)
+           -int(4 byte)
+           -byte(1 byte)
+           -float(4 byte)
+           -long(8 bite)
+           -double(8 byte)
+           -boolean(1 byte)
+           -char(2 byte)
+        2)non primitive data type(u can store multiple values)
+          size can defined by programmer
+           -string
+           -array
+           -class 
+           -object
+           -list , queue, stack
+
+operators
+   -symbols to perform operations between two operands
+1.Arithmetic operators 
+   +,-,*,%
+2.Relational operator
+  <,<=,>,>=,==,!=
+3.Assignment operation
+=
+4.Logical operator 
+  &&,||,!
+5.Unary operator:
+  ++,--
+   -post increment
+       int a=10;
+           a++//10(the value will be 11)
+           ++a//12
+   -pre increment
+6.ternary operator
+  a>b?a:b
+
+Conditional statements:(it is also called as decision making statement)
+  1)if 
+  2)if_else
+  3)if else if
+  4)nested if
+  5)switch
+
+Looping statements:
+  iterate over number of sequence
+-for loop
+     (initialization;condition;increment)
+ex:
+ for(int i=1;i<=num;i++){
+       factorial *=i;
+}
+num=5(how its work)
+----------------------------------------------------------------------------
+   i     factorial(before) factorial*=i(calculations)  factorial(after)
+   1           1               1*1=1                        1
+   2           1               1*2=2                        2
+   3           2               2*3=6                        6
+   4           6               6*4=24                       24
+   5           24              24*5=120                     120
+----------------------------------------------------------------------------   
+-while loop
+      entry controlled loop
+-do while loop
+      exit controlled loop
+
+Jump statement:
+ 1.break
+ 2.continue
+
+Array:
+   -It is an object use to collection of homogenious elements of same data type
+   -elements are stored in contigous memory location
+   -arrays stored fixed elements and these are index based
+   -index starts from zero
+
+Disadvantage of an array:
+   -size of an array is fixed so the size of the array does not grow dynamically at run time
+
+
+Types of array
+ 1.single dimensional array
+     -Collecting the values in linear data structure
+ 2.multi dimensional array
+     -array of array
+     -rows and columns
+        0 1
+       [2 4  0
+        4 2] 1
+
+create an array:
+1)int ar[]//declaration 
+2)int []ar=new int[5]//declaration and instantiation
+3)int []ar={1,2,3,4}
+
+oops:
+   Object oriented programming language
+   mainly used object to organize the code
+   creating an application using class and object
+
+Uses
+  1.modularity
+  2.re usability
+  3.readability
+  4.scalability
+  5.flexibility
+
+class:
+   -collection of object
+   -it is a blue print
+   -user define protocol
+
+Object:
+ -Instance of class
+ -without class con't create an object
+
+two properties
+1.sate
+     -variable(what object knows)
+     
+2.behaveiour
+     -method(what object does)
+
+eg:
+ pen
+ properties
+
+ 2 ways to initialize data members
+   *by using reference variable
+   *by using method
+   *by using constructor
+
+Constructor:
+   it is a method used to initialize the data members
+   constructor name should be same as class name
+   at the time of object creation 
+   constructor gets called implicitly
+
+Types of constructor
+1.default constructor
+2.parameterized constructor
+
+This keyword:
+  --The this keyword in Java is a reference variable that refers to the current 
+    object of the class. It is used in different scenarios to avoid confusion
+    between instance variables and parameters, invoke methods, and return the 
+    current class instance.
+
+4 properties / pillars of oops
+1.Inheritance
+    -aquring properties from one class to another class (or) base class to child class
+     types of inheritance
+     1.single level inheritance
+          -one parent class and one child class
+     2.multilevel
+          -one parent class and multiple sub class
+     3.hybrid 
+          -single, multilevel,hierarch
+     4.hierarchical
+          -one parent class
+          -multiple child class
+     5.multiple
+          -multiple parent class
+          -child class
+          -doesnot support using class
+          -u can achive it an using an interface
+2.abstraction
+3.encapsulation
+4.polymorphism
+    -many forms
+    -performing a method in a different ways
+        2 types 
+        1.run time polymorphism(method overriding)
+           -2 classes (inheritance)
+           -same method same parameter same return type
+           -if child class has same method as declared in the parent class
+        2.compile time polymorphism(method overloading)
+           -same method but different parameters
+3.Abstraction:
+ -hiding implementation details and showing only the functionalities
+ -using two ways
+     -using abstract key word
+     -using interface
+when declaring a method you can use an abstract class
+when method is abstract then class will become an abstract class 
+
+4.Encapsulation
+  -Wrapping up of variable and methods into a single unit
+  1)getter
+  2)setter
+
+Achieve encapsulation
+ -using an private key word
+
+Interface
+ -it is blue print
+ -user defined protocol
+ -same like class
+ -it consists of all abstract method
+ -no need to use abstract key word
+ -from java 8 features it allows to add default and static method 
+ -achieve 100% abstraction
+ -to achieve multiple inheritance
+ -you cant create object
+ -implements(when acquires property from interface use implement)
+ -when interface acquires from interface it is again extends     
+ 
+
+JDBC(java database connectivity)
+    -it is an API(application programming interface)
+    -it consists set of rules to connect with different soft wares
+    -it consists classes and interface
+    -use jdbc drive
+     
+MySql: 
+   -create a database name class training
+   -create a table called user
+   -create a column
+
+to connect JDBC and MySql there are 7 steps
+ 1.import sql package
+     -import java.sql.*;
+ 2.load the driver
+     -Class.forName("com.mysql.jdbc.Driver");
+ 3.establish the connection
+     -Connection cn = DriverManager.getConnection("jdbc:mysql://localhost","root","null");
+ 4.create a statement
+ 5.execute statement   
+     -executeUpdate();
+ 6.process the result
+ 7.close the connection
